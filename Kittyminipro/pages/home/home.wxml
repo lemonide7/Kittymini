@@ -1,0 +1,82 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+        <block wx:for="{{movies}}" wx:for-index="index" wx:key="index">  
+          <swiper-item>  
+            <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+          </swiper-item>  
+        </block>  
+  </swiper> 
+<!-- 导航第一列 -->
+  <view class="pets">
+    <navigator class="pets-item" url="">
+      <view class="iconfont icon-chongwu,icons" style="color:#FF9999">
+      </view>
+       <text class="pets-info">喵咪粮</text>
+    </navigator>
+
+    <navigator class="pets-item">
+      <view class="iconfont icon-chongwu1,icons" style="color:#FFCC99"></view>
+      <text class="pets-info">喵服务</text>
+    </navigator>   
+    
+    <navigator class="pets-item" url="../catInfo/catInfo">
+      <view class="iconfont icon-chongwumao,icons" style="color:#FFCC99"></view>
+      <text class="pets-info">喵喵喵</text>
+    </navigator>   
+  
+    <navigator class="pets-item">
+        <view class="iconfont .icon-chongwujiyang,icons" style="color:#FF9999"></view>
+        <text class="pets-info">喵家族</text>
+    </navigator>  
+  </view>
+  <view class="pets">
+    <navigator class="pets-item">
+      <view class="iconfont icon-chongwuyiliao,icons" style="color:#FF9999" >
+      </view>
+       <text class="pets-info">喵健康</text>
+    </navigator>
+
+    <navigator class="pets-item" url="../catTrain/catTrain">
+      <view class="iconfont icon-xunlian,icons" style="color:#FFCC99"></view>
+      <text class="pets-info">喵训练</text>
+    </navigator>   
+    
+    <navigator class="pets-item">
+      <view class="iconfont icon-chongwujiyang1,icons" style="color:#FFCC99"></view>
+      <text class="pets-info">喵社区</text>
+    </navigator>   
+  
+    <navigator class="pets-item">
+        <view class="iconfont icon-chongwusheying,icons" style="color:#FF9999" ></view>
+        <text class="pets-info">喵萌宠</text>
+    </navigator>  
+  </view>
+<!-- 图片 -->
+<view class="banner">
+  <image src="/images/nav4.jpg" mode="aspectFill"></image>
+</view> 
+
+<!-- 晒一晒 -->
+<view class="s-s">
+  <view class="s-s-top">
+      <view class="line"></view>
+      <view class="text">
+        <text>晒一晒</text>
+        <text class="lookmore">查看更多></text>
+      </view>
+  </view>
+  <view class="showoff">
+    <view class="img">
+      <image src="/images/nav2.jpg" mode="aspectFill"></image>
+    </view>
+    <view  class="img">
+      <image src="/images/nav3.jpg" mode="aspectFill"></image>
+    </view>
+  </view>
+
+
+</view>
+
+
+</view>

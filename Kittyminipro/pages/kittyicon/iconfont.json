@@ -1,0 +1,121 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3167195",
+      "name": "宠物",
+      "font_class": "chongwu",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "5068708",
+      "name": "宠物寄养",
+      "font_class": "icon-",
+      "unicode": "e6f0",
+      "unicode_decimal": 59120
+    },
+    {
+      "icon_id": "5068709",
+      "name": "宠物玩具",
+      "font_class": "icon-1",
+      "unicode": "e6f1",
+      "unicode_decimal": 59121
+    },
+    {
+      "icon_id": "5069992",
+      "name": "宠物联谊",
+      "font_class": "icon-2",
+      "unicode": "e6f6",
+      "unicode_decimal": 59126
+    },
+    {
+      "icon_id": "5168916",
+      "name": "宠物",
+      "font_class": "chongwu1",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "5171448",
+      "name": "宠物猫",
+      "font_class": "chongwumao",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "5171450",
+      "name": "宠物训练",
+      "font_class": "xunlian",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "5171464",
+      "name": "宠物小窝",
+      "font_class": "xiaowo",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "5171465",
+      "name": "宠物社交",
+      "font_class": "chongwushejiao",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "5191355",
+      "name": "宠物药箱",
+      "font_class": "chongwuyaoxiang_",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "5194255",
+      "name": "宠物寄养",
+      "font_class": "chongwujiyang",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "5194257",
+      "name": "宠物领养",
+      "font_class": "chongwulingyang",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "5214712",
+      "name": "宠物",
+      "font_class": "chongwu2",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "5469600",
+      "name": "宠物哺乳",
+      "font_class": "chongwuburu",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "5469612",
+      "name": "宠物猫",
+      "font_class": "chongwumao1",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "5469621",
+      "name": "宠物药品",
+      "font_class": "chongwuyaopin",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    }
+  ]
+}

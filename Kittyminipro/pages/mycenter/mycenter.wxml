@@ -1,0 +1,51 @@
+<!--pages/mycenter/mycenter.wxml-->
+<view class="container">
+
+<view class="header">
+   <view class="top">
+    <view class="m-info">
+      <view class="m-wrap">
+        <image src="/images/m-img1.jpg" mode="scaleToFill"></image>
+        <view class="cat-wrap">
+          <view class="cat-row">
+            <view class="m-block1"></view>
+            <text class="cat-info">菜猪</text>
+        </view>
+        <view class="cat-row">
+            <view class="m-block2"></view>
+            <text class="cat-info">18岁</text>
+        </view>
+        <view class="cat-row">
+            <view class="m-block3"></view>
+            <text class="cat-info">铲屎的猪猪女孩</text>
+        </view> 
+      </view>
+      <view class="m-btn">   
+          <van-button plain round color="#4bb0ff" size="small">修改信息</van-button>
+      </view>
+    </view>
+   </view>
+   <view class="m-brief"><van-button color="linear-gradient(to right, #4bb0ff, #6149f6)" size="small">个人简介</van-button>
+      <text>四月是你的谎言，冲冲冲奶瓶！</text>
+    </view>
+</view>
+
+</view>
+ <view class="m-nav">
+   <view class="nav">
+    <view class="nav1">
+      <view class="m-icon"><van-icon name="shopping-cart" info="9" size="60rpx" color="#FF9999"/><text>购物车</text></view>
+      <view class="m-icon"><van-icon name="balance-list" size="60rpx" color="#F44C46"/><text>订单</text></view>
+      <view class="m-icon"><van-icon name="star" size="60rpx" color="#FFA15B"/><text>收藏</text></view>
+    </view >
+    <view class="nav1">
+      <view class="m-icon"><van-icon name="setting" size="60rpx" color="#C868FC"/><text>设置</text></view>
+      <view class="m-icon"><van-icon name="phone" size="60rpx" color="#52BBFF" /><text>联系我们</text></view>
+      <view class="m-icon"><van-icon name="warning" size="60rpx" color="#7892FD"/><text>问题反馈</text></view>
+    </view>
+  </view>
+ </view>
+ 
+      <navigator url="../lookmore/lookmore" hover-class="other-navigator-hover">查看更多</navigator>
+
+</view>

@@ -1,0 +1,85 @@
+<!--pages/catInfo/catInfo.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="top">
+      <text class="m-title">萌萌喵的信息</text>
+      <view class="m-info">
+        <view class="m-wrap">
+          <view>
+            <text class="cat-name">大本比邝紫如</text>
+          </view>
+          <view class="m-label">
+            <view class="m-label1">未绝育</view>
+            <view class="m-label2">蓝猫</view>
+          </view>
+
+          <view class="cat-wrap">
+            <view class="cat-row">
+              <view class="m-block1"></view>
+              <text class="cat-info">女</text>
+            </view>
+            <view class="cat-row">
+              <view class="m-block2"></view>
+              <text class="cat-info">10个月</text>
+            </view>
+            <view class="cat-row">
+              <view class="m-block3"></view>
+              <text class="cat-info">广东省 广州市 白云区</text>
+            </view>
+
+          </view>
+        </view>
+        <image src="/images/m-img2.jpg" mode="scaleToFill"></image>
+      </view>
+    </view>
+  </view>
+  <view class="m-dymanic">
+    <view class="m-d-title">
+      <view class="m-line"></view>
+      <text>动态</text>
+    </view>
+    <view class="m-img">
+      <view class="m-img-cat">
+        <image src="/images/m-img3.jpg" mode="scaleToFill"></image>
+        <view class="img-info">
+          <view class="m-info-row1">
+            <text>发呆的小奶瓶</text>
+            <text class="m-info-time">2019.11.5</text>
+          </view>
+          <van-icon name="like" size="40rpx" color="#FFA15B" />
+        </view>
+      </view>
+      <view class="m-img-cat">
+        <image src="/images/m-img1.jpg" mode="scaleToFill"></image>
+        <view class="img-info">
+          <view class="m-info-row1">
+            <text>发呆的小奶瓶</text>
+            <text class="m-info-time">2019.11.5</text>
+          </view>
+          <van-icon name="like-o" size="40rpx" color="#FFA15B" />
+        </view>
+      </view>
+      <view class="m-img-cat">
+        <image src="/images/nav2.jpg" mode="scaleToFill"></image>
+        <view class="img-info">
+          <view class="m-info-row1">
+            <text>发呆的小奶瓶</text>
+            <text class="m-info-time">2019.11.5</text>
+          </view>
+          <van-icon name="like-o" size="40rpx" color="#FFA15B" />
+        </view>
+      </view>
+      <view class="m-img-cat">
+        <image src="/images/nav3.jpg" mode="scaleToFill"></image>
+        <view class="img-info">
+          <view class="m-info-row1">
+            <text>发呆的小奶瓶</text>
+            <text class="m-info-time">2019.11.5</text>
+          </view>
+          <van-icon name="like" size="40rpx" color="#FFA15B" />
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>

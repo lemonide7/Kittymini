@@ -1,0 +1,6 @@
+<!--pages/apiTest/apiTest.wxml-->
+<text>pages/apiTest/apiTest.wxml</text>
+
+<view wx:for='{{datalist}}'>
+<text>名字：{{item.username}}</text>
+</view>

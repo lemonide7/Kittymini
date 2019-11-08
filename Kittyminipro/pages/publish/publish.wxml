@@ -1,0 +1,18 @@
+<!--pages/publish/publish.wxml-->
+
+<view class="container">
+  <view class="wrap">
+    <!-- <text>分享更多你和萌宠之间的趣事哩~~</text>
+    <view class="camera">
+      <image src="/images/camera.png"></image>
+    </view> -->
+     <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" select="{{selectFile}}" upload="{{uplaodFile}}" files="{{files}}" max-count="5" title="萌萌萌宠~" tips="分享更多你和萌宠之间的趣事哩~~"></mp-uploader>
+
+  </view>
+  <view class="info">
+    <view class="desc"><image src="/images/House1.png"></image><text>喵咪的名字:</text><input type="text"></input></view>
+    <view class="desc"><image src="/images/House1.png"></image><text>喵咪的简述:</text><input type="text"></input></view>
+  </view>  
+ <button type="primary" size="large">发布</button>
+</view>
+

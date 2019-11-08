@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/navtab/navtab",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/mycenter/mycenter",
+    "dist/example/index",
+    "pages/publish/publish",
+    "pages/lookmore/lookmore",
+    "pages/catInfo/catInfo",
+    "pages/catTrain/catTrain",
+    "pages/apiTest/apiTest"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFD700",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+    
+  },
+  "tabBar": {
+   
+    "color": "#ccc",
+    "selectedColor": "#996633",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath":"/images/Home3.png",
+        "selectedIconPath":"/images/Home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "iconPath": "/images/camera.png",
+        "selectedIconPath": "/images/camera1.png",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/mycenter/mycenter",
+        "iconPath": "/images/my1.png",
+        "selectedIconPath": "/images/my2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents":{
+  "van-button":"vant-weapp/button",
+    "van-tabbar": "/vant-weapp/dist/tabbar/index",
+    "van-tabbar-item": "/vant-weapp/dist/tabbar-item/index",
+    "van-icon": "/vant-weapp/dist/icon/index"
+  },
+
+
+  "sitemapLocation": "sitemap.json"
+}

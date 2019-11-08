@@ -1,0 +1,136 @@
+/* pages/mycenter/mycenter.wxss */
+/* @import "../../dist/style/weui.wxss"; */
+@import "../home/home.wxss";
+
+.container{
+  margin: 0 auto;
+  padding: 0 30rpx;
+  width: 100%;
+  height: 200rpx;
+ border-bottom-left-radius: 10rpx;
+ border-bottom-right-radius: 10rpx;
+  box-sizing: border-box;
+  background: #FFD700;
+}
+.header{
+  width: 100%;
+  height: 300rpx;
+  padding-right: 50rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+  margin-bottom: 80rpx;
+}
+
+.top{
+  width: 100%;
+  height: 300rpx;
+  border-radius: 10rpx;
+  border-top-right-radius: 80rpx;
+  background-color: #fff;
+  box-shadow: 1rpx 1rpx 10rpx rgb(83, 81, 79);
+}
+.m-info{
+  position: relative;
+  display: flex; 
+  height: 200rpx;
+  padding-left: 20rpx;
+  padding-top: 10rpx;
+}
+.m-info image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  border: 1px solid rgb(221, 204, 52);
+  position: absolute;
+  top: 40rpx;
+  left: 25rpx;
+}
+.m-wrap{
+  display: flex;
+  padding-top: 30rpx;
+}
+.m-btn{
+  margin-right: 80rpx;
+}
+.cat-name{
+  color: #000;
+  font-size: 30rpx;
+  font-family: Microsoft Yahei;
+  letter-spacing: 2rpx;
+}
+.cat-wrap{
+  margin-top: 10rpx;
+  margin-left: 150rpx;
+}
+.cat-row{
+  display: flex;
+  margin-bottom: 10rpx;
+}
+.cat-info{
+  font-size: 25rpx;
+  margin-left: 10rpx;
+  line-height: 30rpx;
+}
+.m-block1{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 5rpx;
+  background: rgb(132, 204, 233);
+}
+.m-block2{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 5rpx;
+  background:rgb(221, 204, 52);
+}
+.m-block3{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 5rpx;
+  background:rgb(245, 141, 205);
+}
+.m-brief{
+  display: flex;
+  height: 60rpx;
+  padding-left: 30rpx;
+}
+.m-brief text{
+  font-size: 28rpx;
+  padding-left: 5rpx;
+  line-height: 60rpx;
+  border: 1px solid #e2e2e2;
+  border-radius: 10rpx;
+  box-shadow:  1rpx 1rpx 1rp #e2e2e2;
+  text-shadow: 1rpx 1rpx 1rpx #C868FC;
+
+}
+.m-nav{
+  width: 100%;
+  padding: 0 50rpx;
+  box-sizing: border-box;
+  margin-top: 40rpx;
+}
+.nav{
+  width: 100%;
+  background-color: #fff;
+}
+.nav1{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-bottom: 50rpx;
+  
+}
+.nav1 .m-icon{
+  display: flex;
+  flex-direction: column;
+  width: 100rpx;
+  height: 120rpx;
+  align-items:center;
+  text-align: center;
+}
+.nav1 .m-icon text{
+  font-size: 25rpx;
+  font-weight: bold;
+}

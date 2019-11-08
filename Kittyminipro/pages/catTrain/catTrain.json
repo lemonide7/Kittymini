@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-popup": "/vant-weapp/dist/popup/index",
+    "van-cell": "/vant-weapp/dist/cell/index"
+  },
+  "navigationBarBackgroundColor": "#FFD700",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "训练知识"
+}

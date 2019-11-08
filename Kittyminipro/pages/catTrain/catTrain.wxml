@@ -1,0 +1,208 @@
+<!--pages/catTrain/catTrain.wxml-->
+<view class="container">
+<!-- 第一步曲 -->
+  <view class="c-title">
+    <text>训猫三部曲</text>
+  </view>
+<view class="c-steps">
+ <view class="c-steps-title"><text >主子训练-铲屎君幼儿园</text></view>
+ <view class="c-wrap">
+   <view class="first-img m-img">
+      <image src="/images/m-img1.jpg" mode="aspectFill"></image>
+      <view class="c-info">
+        <van-cell title="训练主子前须知~" is-link bind:click="showPopup" />
+        <view class="c-level">
+            <text>难易度</text>
+            <van-icon name="star" color="#FFD700"/>
+            <van-icon name="star" color="#FFD700"/>
+        </view>
+      </view>
+   </view>
+   <view class="sec-img m-img">
+      <image src="/images/m-img2.jpg" mode="aspectFill"></image>
+      <view class="c-info">
+       <van-cell title="训练猫咪的必get基础" is-link bind:click="showPopup1" />
+        <view class="c-level">
+            <text>难易度</text>
+            <van-icon name="star" color="#FFD700"/>
+        </view>
+      </view>
+   </view>
+ </view>
+</view>
+<!-- 第二步曲 -->
+<view class="c-steps">
+ <view class="c-steps-title"><text >服从性训练-猫咪学前班</text></view>
+ <view class="c-wrap">
+   <view class="first-img m-img">
+      <image src="/images/m-img3.jpg" mode="aspectFill"></image>
+      <view class="c-info">
+        <van-cell title="如何教主子适应猫笼~" is-link bind:click="showPopup" />
+        <view class="c-level">
+            <text>难易度</text>
+            <van-icon name="star" color="#FFD700"/>
+            <van-icon name="star" color="#FFD700"/>
+        </view>
+      </view>
+   </view>
+   <view class="sec-img m-img">
+      <image src="/images/nav1.jpg" mode="aspectFill"></image>
+      <view class="c-info">
+        <van-cell title="主子乖乖来剪指甲吧~" is-link bind:click="showPopup" />
+        <view class="c-level">
+            <text>难易度</text>
+            <van-icon name="star" color="#FFD700"/>
+        </view>
+      </view>
+   </view>
+ </view>
+</view>
+<!-- 第三部曲 -->
+<view class="c-steps">
+ <view class="c-steps-title"><text >主子训练-铲屎君幼儿园</text></view>
+ <view class="c-wrap">
+   <view class="first-img m-img" >
+      <image src="/images/nav2.jpg" mode="aspectFill" ></image>
+      <view class="c-info">
+      <van-cell title="教主子听懂自个的名~" is-link bind:click="showPopup" />
+        <text></text>
+        <view class="c-level">
+            <text>难易度</text>
+            <van-icon name="star" color="#FFD700"/>
+            <van-icon name="star" color="#FFD700"/>
+        </view>
+      </view>
+   </view>
+   <view class="sec-img m-img">
+      <image src="/images/nav3.jpg" mode="aspectFill"></image>
+      <view class="c-info">
+        <text></text>
+        <van-cell title="让主子接受我的抚摸~" is-link bind:click="showPopup" />
+        <view class="c-level">
+            <text>难易度</text>
+            <van-icon name="star" color="#FFD700"/>
+        </view>
+      </view>
+   </view>
+ </view>
+</view>
+
+<view is-link bind:click="showPopup">yayayaya</view>
+
+
+<van-popup show="{{ show }}" bind:close="onClose" closeable  close-icon="close">
+  <view class="c-popup">
+    <text class="c-popup-title">训练主子前须知~</text>
+    <view class="c-train-info">
+      <text class="c-info-title"> 1、破坏大王</text>
+      <text class="c-info-content"> 猫咪是好奇又固执的一种动物，加上牠们有磨爪子的需求，只要见到家裡有适合的物品一定难逃魔爪，一般常见沦为猫咪爪下物的东西有：沙发、书柜、床脚、窗帘、纸箱、书堆……甚至音响，都难逃被抓的下场。二个多月大的小猫因为正在长牙，加上开始学习狩猎本能，除了爪子也会利用小牙大啃特啃，这时除了家具，就连主子的手脚都会遭殃。放在桌子、柜子上的东西，牠们每一件都要仔细检查，轻则拨一拨了事，重则拨到落地为止，更惨的是直接吞下肚，所以养猫的家裡通常无法放太多了小饰物。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title">  2、太过敏感</text>
+     <text class="c-info-content">  猫不像狗狗那般好客，大部分的猫怕生，见到陌生人进门通常或躲藏起来。有些猫咪很怕改变，例如家具的搬动、陌生人的出现、不满主子变凶、猫沙不乾淨、有新猫或新宠物加入等等，都会造成猫咪心理上的不安，反映出的行为包括：乱尿尿、拒食、攻击、异食、抑鬱……等，这时还得抽丝剥茧找出原因对症下药，好好的安抚牠，有时还不见得有用，这点和其他动物比较起来实在有点麻烦。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 3、发春或无聊时的吵闹</text>
+     <text class="c-info-content"> 到了思春期，母猫因为生理变化会经常发生半夜嚎叫，公猫会四处喷尿。养在家裡的猫则会想尽办法出门，小则吵到自己，大则骚扰到邻居，让人不堪其扰。注意：猫沙要常更换清理。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 4、小猫过动，大猫懒得动</text>
+     <text class="c-info-content">  刚断奶的猫咪一直到满一岁时，活动力是最旺盛的时期，在强烈的好奇心驱使下，不管看到什麽都很有趣，不定时的爆衝，加上猫咪是立体活动的动物，可以天天在家裡表演飞簷走壁的特技，这时家中的杂物会全部遭殃，也许小猫可爱，但是主子可能要天天收拾残局。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 4、小猫过动，大猫懒得动</text>
+     <text class="c-info-content">  刚断奶的猫咪一直到满一岁时，活动力是最旺盛的时期，在强烈的好奇心驱使下，不管看到什麽都很有趣，不定时的爆衝，加上猫咪是立体活动的动物，可以天天在家裡表演飞簷走壁的特技，这时家中的杂物会全部遭殃，也许小猫可爱，但是主子可能要天天收拾残局。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 4、小猫过动，大猫懒得动</text>
+     <text class="c-info-content">  刚断奶的猫咪一直到满一岁时，活动力是最旺盛的时期，在强烈的好奇心驱使下，不管看到什麽都很有趣，不定时的爆衝，加上猫咪是立体活动的动物，可以天天在家裡表演飞簷走壁的特技，这时家中的杂物会全部遭殃，也许小猫可爱，但是主子可能要天天收拾残局。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 4、小猫过动，大猫懒得动</text>
+     <text class="c-info-content">  刚断奶的猫咪一直到满一岁时，活动力是最旺盛的时期，在强烈的好奇心驱使下，不管看到什麽都很有趣，不定时的爆衝，加上猫咪是立体活动的动物，可以天天在家裡表演飞簷走壁的特技，这时家中的杂物会全部遭殃，也许小猫可爱，但是主子可能要天天收拾残局。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 4、小猫过动，大猫懒得动</text>
+     <text class="c-info-content">  刚断奶的猫咪一直到满一岁时，活动力是最旺盛的时期，在强烈的好奇心驱使下，不管看到什麽都很有趣，不定时的爆衝，加上猫咪是立体活动的动物，可以天天在家裡表演飞簷走壁的特技，这时家中的杂物会全部遭殃，也许小猫可爱，但是主子可能要天天收拾残局。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 4、小猫过动，大猫懒得动</text>
+     <text class="c-info-content">  刚断奶的猫咪一直到满一岁时，活动力是最旺盛的时期，在强烈的好奇心驱使下，不管看到什麽都很有趣，不定时的爆衝，加上猫咪是立体活动的动物，可以天天在家裡表演飞簷走壁的特技，这时家中的杂物会全部遭殃，也许小猫可爱，但是主子可能要天天收拾残局。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 4、小猫过动，大猫懒得动</text>
+     <text class="c-info-content">  刚断奶的猫咪一直到满一岁时，活动力是最旺盛的时期，在强烈的好奇心驱使下，不管看到什麽都很有趣，不定时的爆衝，加上猫咪是立体活动的动物，可以天天在家裡表演飞簷走壁的特技，这时家中的杂物会全部遭殃，也许小猫可爱，但是主子可能要天天收拾残局。</text>
+  
+  </view>
+  </view>
+ 
+</van-popup>
+
+<van-popup show="{{ show1 }}" bind:close="onClose1" closeable  close-icon="close">
+  <view class="c-popup">
+    <text class="c-popup-title">训练主子前须知~11123123</text>
+    <view class="c-train-info">
+      <text class="c-info-title"> 1、破坏大王</text>
+      <text class="c-info-content"> 猫咪是好奇又固执的一种动物，加上牠们有磨爪子的需求，只要见到家裡有适合的物品一定难逃魔爪，一般常见沦为猫咪爪下物的东西有：沙发、书柜、床脚、窗帘、纸箱、书堆……甚至音响，都难逃被抓的下场。二个多月大的小猫因为正在长牙，加上开始学习狩猎本能，除了爪子也会利用小牙大啃特啃，这时除了家具，就连主子的手脚都会遭殃。放在桌子、柜子上的东西，牠们每一件都要仔细检查，轻则拨一拨了事，重则拨到落地为止，更惨的是直接吞下肚，所以养猫的家裡通常无法放太多了小饰物。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title">  2、太过敏感</text>
+     <text class="c-info-content">  猫不像狗狗那般好客，大部分的猫怕生，见到陌生人进门通常或躲藏起来。有些猫咪很怕改变，例如家具的搬动、陌生人的出现、不满主子变凶、猫沙不乾淨、有新猫或新宠物加入等等，都会造成猫咪心理上的不安，反映出的行为包括：乱尿尿、拒食、攻击、异食、抑鬱……等，这时还得抽丝剥茧找出原因对症下药，好好的安抚牠，有时还不见得有用，这点和其他动物比较起来实在有点麻烦。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 3、发春或无聊时的吵闹</text>
+     <text class="c-info-content"> 到了思春期，母猫因为生理变化会经常发生半夜嚎叫，公猫会四处喷尿。养在家裡的猫则会想尽办法出门，小则吵到自己，大则骚扰到邻居，让人不堪其扰。注意：猫沙要常更换清理。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 4、小猫过动，大猫懒得动</text>
+     <text class="c-info-content">  刚断奶的猫咪一直到满一岁时，活动力是最旺盛的时期，在强烈的好奇心驱使下，不管看到什麽都很有趣，不定时的爆衝，加上猫咪是立体活动的动物，可以天天在家裡表演飞簷走壁的特技，这时家中的杂物会全部遭殃，也许小猫可爱，但是主子可能要天天收拾残局。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 4、小猫过动，大猫懒得动</text>
+     <text class="c-info-content">  刚断奶的猫咪一直到满一岁时，活动力是最旺盛的时期，在强烈的好奇心驱使下，不管看到什麽都很有趣，不定时的爆衝，加上猫咪是立体活动的动物，可以天天在家裡表演飞簷走壁的特技，这时家中的杂物会全部遭殃，也许小猫可爱，但是主子可能要天天收拾残局。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 4、小猫过动，大猫懒得动</text>
+     <text class="c-info-content">  刚断奶的猫咪一直到满一岁时，活动力是最旺盛的时期，在强烈的好奇心驱使下，不管看到什麽都很有趣，不定时的爆衝，加上猫咪是立体活动的动物，可以天天在家裡表演飞簷走壁的特技，这时家中的杂物会全部遭殃，也许小猫可爱，但是主子可能要天天收拾残局。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 4、小猫过动，大猫懒得动</text>
+     <text class="c-info-content">  刚断奶的猫咪一直到满一岁时，活动力是最旺盛的时期，在强烈的好奇心驱使下，不管看到什麽都很有趣，不定时的爆衝，加上猫咪是立体活动的动物，可以天天在家裡表演飞簷走壁的特技，这时家中的杂物会全部遭殃，也许小猫可爱，但是主子可能要天天收拾残局。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 4、小猫过动，大猫懒得动</text>
+     <text class="c-info-content">  刚断奶的猫咪一直到满一岁时，活动力是最旺盛的时期，在强烈的好奇心驱使下，不管看到什麽都很有趣，不定时的爆衝，加上猫咪是立体活动的动物，可以天天在家裡表演飞簷走壁的特技，这时家中的杂物会全部遭殃，也许小猫可爱，但是主子可能要天天收拾残局。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 4、小猫过动，大猫懒得动</text>
+     <text class="c-info-content">  刚断奶的猫咪一直到满一岁时，活动力是最旺盛的时期，在强烈的好奇心驱使下，不管看到什麽都很有趣，不定时的爆衝，加上猫咪是立体活动的动物，可以天天在家裡表演飞簷走壁的特技，这时家中的杂物会全部遭殃，也许小猫可爱，但是主子可能要天天收拾残局。</text>
+    </view>
+
+    <view class="c-train-info">
+     <text class="c-info-title"> 4、小猫过动，大猫懒得动</text>
+     <text class="c-info-content">  刚断奶的猫咪一直到满一岁时，活动力是最旺盛的时期，在强烈的好奇心驱使下，不管看到什麽都很有趣，不定时的爆衝，加上猫咪是立体活动的动物，可以天天在家裡表演飞簷走壁的特技，这时家中的杂物会全部遭殃，也许小猫可爱，但是主子可能要天天收拾残局。</text>
+  
+  </view>
+  </view>
+ 
+</van-popup>
+
+
+</view>

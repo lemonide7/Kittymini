@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+      "van-grid": "vant-weapp/dist/grid/index",
+      "van-grid-item": "vant-weapp/dist/grid-item/index"
+      
+  },
+  "navigationBarBackgroundColor": 
+  "#FFD700",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "猫咪宝典"
+
+
+
+}
