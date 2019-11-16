@@ -1,0 +1,76 @@
+<div>
+    <el-breadcrumb separator-class="el-icon-arrow-right">
+        <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
+        <el-breadcrumb-item>权限管理</el-breadcrumb-item>
+        <el-breadcrumb-item>角色列表</el-breadcrumb-item>
+    </el-breadcrumb>
+    <template>
+        <el-table :data="rolelist" stripe style="width: 100%">
+            <!-- 表格扩展 -->
+            <el-table-column type="expand">
+                <template slot-scope="props">
+                    <el-row v-if="props.row.children.length==='0'">
+                        <el-col>暂无权限，请分配</el-col>
+                    </el-row>
+                    <!-- props.row.children 一级菜单 -->
+                    <el-row  v-else class="rights-level1" v-for="level1 in props.row.children" :key="level1.id" >
+                        <!-- 一级菜单的名称 -->
+                        <el-col :span="4">
+                            <el-tag closable>
+                                {{ level1.authName }}
+                            </el-tag>
+                            <i class="el-icon-arrow-right"></i>
+                        </el-col>
+
+                        <el-col :span="20">
+                            <el-row class="rights-level2" v-for="level2 in level1.children" :key="level2.id"  >
+                                <!-- 二级菜单的名称 -->
+                                <el-col :span="4">
+                                    <el-tag closable type="success">
+                                        {{ level2.authName }}
+                                    </el-tag>
+                                    <i class="el-icon-arrow-right"></i>
+                                </el-col>
+
+                                <el-col :span="20">
+                                    <!-- 三级菜单的名称 -->
+                                    <el-tag   closable type="warning" v-for="level3 in level2.children" :key="level3.id">
+                                            {{ level3.authName }}
+                                    </el-tag>
+                                </el-col>
+                            </el-row>
+                        </el-col>
+                    </el-row>
+                </template>
+            </el-table-column>
+            <el-table-column type="index" :index="indexMethod">
+            </el-table-column>
+            <el-table-column prop="roleName" label="角色名称" width="180">
+            </el-table-column>
+            <el-table-column prop="roleDesc" label="描述" width="180">
+            </el-table-column>
+            <el-table-column label="操作">
+                <template slot-scope="scope">
+                    <el-button size="mini" type="primary" plain icon="el-icon-edit" @click="roleEditshow(scope.row)"></el-button>
+                    <el-button size="mini" type="warning" plain icon="el-icon-delete"@click="roleDel(scope.row.id)"></el-button>
+                    <el-button size="mini" type="success" plain icon="el-icon-check">分配权限</el-button>
+                </template>
+            </el-table-column>
+        </el-table>
+    </template>
+    <el-dialog title="修改角色信息"  :visible.sync="roleEditDialog" >
+            <el-form id="#update" :model="roleEdit" label-width="100px" :rules="roleEditrules" :ref="roleEdit">
+            <el-form-item label="角色名称" prop="roleName" >
+            <el-input v-model="roleEdit.roleName" ></el-input>
+            </el-form-item>
+            <el-form-item label="角色描述" prop="roleDesc">
+            <el-input v-model="roleEdit.roleDesc"></el-input>
+            </el-form-item>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+            <el-button @click="roleEditDialog = false">取 消</el-button>
+            <el-button type="primary"  @click="roleUpdate(roleEdit)">确 定</el-button>
+            </div>
+     </el-dialog>
+
+</div>

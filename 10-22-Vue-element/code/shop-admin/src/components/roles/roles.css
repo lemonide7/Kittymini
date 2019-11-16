@@ -1,0 +1,19 @@
+.breadcrumb {
+    height: 60px;
+    line-height: 60px;
+    background-color: #D4DAE0;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+
+  .rights-level1 {
+    padding: 15px 0;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  .rights-level2 {
+    margin-bottom: 10px;
+  }
+  .el-main{
+      line-height: 0;
+  }

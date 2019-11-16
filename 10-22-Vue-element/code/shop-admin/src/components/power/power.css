@@ -1,0 +1,19 @@
+.el-breadcrumb{
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    background-color: #D4DAE0;
+    padding-left: 10px;
+}
+.has-gutter{
+    height: 50px;
+}
+.el-table__header-wrapper{
+   height: 50px;
+}
+.el-table th>.cell{
+    height: 100px;
+    vertical-align: 0;
+    font-size: 16px;
+
+}
