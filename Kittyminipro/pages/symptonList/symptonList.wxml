@@ -1,0 +1,27 @@
+<!--pages/symptonList/symptonList.wxml-->
+<view class="s-container">
+  
+  <van-notice-bar
+  left-icon="warning-o"
+  color="skyblue"
+  backgroundColor="blue"
+  text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。"
+/>
+
+  <view class="s-title">
+    <van-icon name="chat" dot />
+    <text>全部症状</text>  
+  </view>
+
+
+  <block>
+     <view class="s-content">发热</view>
+      <van-divider />
+  </block>
+ 
+  <view class="s-content">抽搐</view>
+  <van-divider />
+  <view class="s-content">内容</view>
+
+
+</view>

@@ -1,0 +1,25 @@
+/* pages/symptonList/symptonList.wxss */
+.s-container{
+  height: 100%;
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.van-notice-bar{
+  padding:0;
+  height: 50rpx;
+  
+}
+.s-title{
+  display: flex;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+  font-size: 30rpx;
+}
+.s-title .van-icon{
+  margin-right: 10rpx;
+}
+.s-content{
+  font-size: 24rpx;
+}

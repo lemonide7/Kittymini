@@ -1,0 +1,84 @@
+/* pages/catDisease/catDisease.wxss */
+.van-search .van-search__content{
+  border-radius:10px;
+  background-color: rgb(241, 238, 238); 
+}
+.c-disease{
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+}
+image{
+  height: 950rpx;
+  padding-left:80rpx;
+}
+.c-part{
+  width: 90rpx;
+  height: 30rpx;
+  text-align: center;
+  color:black;
+  font-size: 24rpx;
+  line-height: 30rpx;
+  border-radius: 25rpx;
+  border: 1px solid pink;
+  box-shadow: 0rpx 2rpx 10rpx rgb(241, 238, 238,.5);
+  margin-bottom: 50rpx;
+}
+.c-top{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 150rpx;
+  left: 250rpx;
+}
+.c-top view:first-child{
+  margin-right: 50rpx;
+}
+.c-left{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 280rpx;
+  left: 50rpx;
+
+}
+.c-right{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 280rpx;
+  right: 50rpx;
+}
+.c-bottom{
+  position: absolute;
+  display: flex;
+  bottom: 200rpx;
+  left: 250rpx;
+
+}
+.c-bottom view:first-child{
+  margin-right: 50rpx;
+}
+.c-desc{
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: rgb(177, 173, 173);
+}
+.c-sympton{
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.c-sympton .van-button{
+  margin-left: 50rpx;
+}

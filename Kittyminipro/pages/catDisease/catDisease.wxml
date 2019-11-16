@@ -1,0 +1,49 @@
+<!--pages/catDisease/catDisease.wxml-->
+<van-search
+  value="{{ keyword }}"
+  placeholder="搜索症状或疾病~"
+  show-action
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+  bind:focus="onFocus"
+/>
+
+<view class="c-disease">
+
+  <image src="/images/7777.png"></image>
+  <view class="c-top">
+    <navigator><view class="c-part">耳朵</view></navigator>
+    <navigator><view class="c-part">眼部</view></navigator>
+  </view>
+  <view class="c-left">
+    <navigator><view class="c-part">鼻子</view></navigator>
+    <navigator><view class="c-part">呼吸道</view></navigator>
+    <navigator><view class="c-part">胸部</view></navigator>
+    <navigator><view class="c-part">腹部</view></navigator>
+  </view>
+  <view class="c-right">
+    <navigator><view class="c-part">口腔</view></navigator>
+    <navigator><view class="c-part">皮肤</view></navigator>
+    <navigator><view class="c-part">全身</view></navigator>
+    <navigator><view class="c-part">泌尿部</view></navigator>
+  </view>
+  <view class="c-bottom">
+    <navigator><view class="c-part">四肢</view></navigator>
+    <navigator><view class="c-part">肛门</view></navigator>
+  </view>
+   <view class="c-desc">
+    <text>我们都生活在阴沟里，但我们还有猫咪鸭</text>
+  </view>
+</view>
+
+<view class="c-foot">
+  <view>
+    <view class="c-sympton">
+    <navigator url="/pages/apiTest/apiTest"> <van-button plain  round  size="normal" type="primary">全部症状</van-button></navigator>
+    <navigator> <van-button plain  round  size="normal" type="warning">全部疾病</van-button></navigator>
+     
+     
+    </view>
+   
+  </view>
+</view>
