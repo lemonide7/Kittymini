@@ -81,7 +81,6 @@ border-bottom: none;
 }
 .van-popup{
   width: 100%;
-
 }
 .c-popup{
   width: 100%;

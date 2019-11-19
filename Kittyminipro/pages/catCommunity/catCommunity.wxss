@@ -1,0 +1,118 @@
+/* pages/catCommunity/catCommunity.wxss */
+@import "../home/home.wxss";
+
+.c-notice-bar{
+  width: 100%;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+}
+.van-notice-bar{
+  color: orangered;
+}
+.van-notice-bar__content{
+   color: orangered;
+}
+/* .c-skeleton{
+  border: 1px solid saddlebrown;
+  width: 100%;
+} */
+.c-user-dynamics{
+  width: 100%;
+  height: 100%;
+}
+.c-top{
+  display: flex;
+  width: 100%;
+  border: 1px solid saddlebrown
+}
+.c-avatar image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  border: 1px solid saddlebrown;
+}
+.c-info{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10rpx;
+  padding-right: 20rpx;
+  width: 100%;
+  height: 80rpx;
+  font-size: 24rpx;
+}
+.c-petName{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.c-petName .c-publishTime{
+  margin-right: 30rpx;
+  color: rgb(172, 169, 169);
+}
+.c-masterinfo{
+  margin-top: 5rpx;
+  display: flex;
+}
+.c-masterinfo image{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+}
+.c-masterinfo .c-masterName{
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.c-masterinfo  .c-masterDec{
+  font-size: 22rpx;
+  color: rgb(172, 169, 169);
+}
+.c-description{
+  font-size: 28rpx;
+  color: rgb(253, 182, 30);
+}
+.c-des-dec{
+  color: rgb(172, 169, 169);
+  margin-left: 5rpx;
+}
+.c-des-img{
+  margin-top: 20rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.c-des-img image{
+  height: 300rpx;
+  width: 330rpx;
+  margin-right: 10rpx;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+/* 点赞评论 */
+.list-command-btn{
+  width: 100%;
+ 
+  display: flex;
+  justify-content: space-around;
+}
+.btn-command{
+  height: 80rpx;
+  display: flex;
+}
+.btn-command text{
+  margin-left: 10rpx;
+  font-size: 24rpx;
+}
+.btn-command .van-icon{
+  line-height: 80rpx;
+  color: red;
+}
+.c-text{
+  line-height: 72rpx;
+}
+.c-collapse{
+  width: 100%;
+  height: 20rpx;
+  margin-bottom: 20rpx;
+  background: #e2e2e2;
+}

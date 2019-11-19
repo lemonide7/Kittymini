@@ -5,7 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
+    show: false,
+    activeName: '1'
+  },
 
+  showPopup() {
+    this.setData({ show: true });
+  },
+
+  onClose() {
+    this.setData({ show: false });
+  },
+  //手风琴
+  onChange(event) {
+    this.setData({
+      activeName: event.detail
+    });
   },
 
   /**

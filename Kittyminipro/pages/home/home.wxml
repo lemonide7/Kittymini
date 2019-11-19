@@ -42,7 +42,7 @@
       <text class="pets-info">喵训练</text>
     </navigator>   
     
-    <navigator class="pets-item">
+    <navigator class="pets-item" url="../catCommunity/catCommunity">
       <view class="iconfont icon-chongwujiyang1,icons" style="color:#FFCC99"></view>
       <text class="pets-info">喵社区</text>
     </navigator>   

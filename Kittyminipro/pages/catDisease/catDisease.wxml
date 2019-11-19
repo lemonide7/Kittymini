@@ -39,8 +39,8 @@
 <view class="c-foot">
   <view>
     <view class="c-sympton">
-    <navigator url="/pages/apiTest/apiTest"> <van-button plain  round  size="normal" type="primary">全部症状</van-button></navigator>
-    <navigator> <van-button plain  round  size="normal" type="warning">全部疾病</van-button></navigator>
+    <navigator url="/pages/symptonList/symptonList"> <van-button plain  round  size="normal" type="primary" >全部症状</van-button></navigator>
+    <navigator url="/pages/diseaseList/diseaseList"> <van-button plain  round  size="normal" type="warning">全部疾病</van-button></navigator>
      
      
     </view>

@@ -3,3 +3,21 @@
   border-radius:10px;
   background-color: rgb(241, 238, 238); 
 }
+.c-search-img{
+  padding: 0 auto;
+  position: relative;
+  width: 100%;
+}
+image{
+  padding-left: 20rpx;
+  /* height: 950rpx; */
+    height: 800rpx;
+}
+.c-text{
+  font-size: 30rpx;
+  color: #ccc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 180rpx;
+}

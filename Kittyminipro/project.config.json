@@ -24,7 +24,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.8.3",
 	"appid": "wxd240f2c8367c053b",
-	"projectname": "Kitty",
+	"projectname": "Kittyminipro",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -49,7 +49,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 8,
+			"current": 12,
 			"list": [
 				{
 					"id": -1,
@@ -111,6 +111,34 @@
 					"id": -1,
 					"name": "pages/apiTest/apiTest",
 					"pathName": "pages/apiTest/apiTest",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/catCommunity/catCommunity",
+					"pathName": "pages/catCommunity/catCommunity",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/catCommunity/catCommunity",
+					"pathName": "pages/catDisease/catDisease",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/symptonList/symptonList",
+					"pathName": "pages/symptonList/symptonList",
 					"scene": null
 				}
 			]

@@ -1,13 +1,15 @@
 <!--pages/symptonList/symptonList.wxml-->
-<view class="s-container">
-  
-  <van-notice-bar
+<van-notice-bar
   left-icon="warning-o"
-  color="skyblue"
-  backgroundColor="blue"
-  text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。"
+  scrollable="false"
+  color="rgb(111, 203, 240)"
+  backgroundColor="rgb(218, 245, 230)"
+  text="请时刻注意小主子的异常状况哦~~~"
 />
 
+<view class="s-container">
+  
+  
   <view class="s-title">
     <van-icon name="chat" dot />
     <text>全部症状</text>  
@@ -15,13 +17,49 @@
 
 
   <block>
-     <view class="s-content">发热</view>
-      <van-divider />
+      <van-cell title="症状名称" is-link bind:click="showPopup" />
+      <van-popup show="{{ show }}" bind:close="onClose" closeable  close-icon="close">
+      <view class="sym-contanier">
+        <view class="sym-Info">
+          <text class="sym-title">发热</text>
+          <text class="sym-dec">发热有吗名单撒打撒十大大苏打啊啊的撒旦阿斯顿阿三打啊打sdadasdadasdadasdsadsadsadsadsadadsa</text>
+        </view>
+        <view class="relative-disease">
+          <view class="c-r-info"></view>
+          <block>
+            <van-collapse value="{{ activeName }}" bind:change="onChange" accordion>
+              <van-collapse-item title="有赞微商城" name="1">
+                提供多样店铺模板，快速搭建网上商城
+              </van-collapse-item>
+              <van-collapse-item title="有赞零售" name="2">
+                网店吸粉获客、会员分层营销、一机多种收款，告别经营低效和客户流失
+              </van-collapse-item>
+              <van-collapse-item title="有赞美业" name="3">
+                线上拓客，随时预约，贴心顺手的开单收银
+              </van-collapse-item>
+            </van-collapse>
+          
+          </block>
+        </view>
+        
+      
+      </view>
+      
+      
+      
+      
+      </van-popup>
+      
   </block>
  
   <view class="s-content">抽搐</view>
   <van-divider />
   <view class="s-content">内容</view>
+
+
+
+
+
 
 
 </view>

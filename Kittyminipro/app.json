@@ -10,6 +10,11 @@
     "pages/lookmore/lookmore",
     "pages/catInfo/catInfo",
     "pages/catTrain/catTrain",
+    "pages/catCommunity/catCommunity",
+    "pages/catDisease/catDisease",
+    "pages/search/search",
+    "pages/diseaseList/diseaseList",
+    "pages/symptonList/symptonList",
     "pages/apiTest/apiTest"
 
   ],
@@ -50,7 +55,16 @@
   "van-button":"vant-weapp/button",
     "van-tabbar": "/vant-weapp/dist/tabbar/index",
     "van-tabbar-item": "/vant-weapp/dist/tabbar-item/index",
-    "van-icon": "/vant-weapp/dist/icon/index"
+    "van-icon": "/vant-weapp/dist/icon/index",
+    "van-skeleton": "/vant-weapp/dist/skeleton/index",
+    "van-notice-bar": "/vant-weapp/dist/notice-bar/index",
+    "van-search": "/vant-weapp/dist/search/index",
+    "van-divider": "/vant-weapp/dist/divider/index",
+    "van-popup": "/vant-weapp/dist/popup/index",
+    "van-cell": "/vant-weapp/dist/cell/index",
+    "van-collapse": "/vant-weapp/dist/collapse/index",
+    "van-collapse-item": "/vant-weapp/dist/collapse-item/index"
+
   },
 
 

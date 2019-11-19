@@ -1,0 +1,108 @@
+<!--pages/catCommunity/catCommunity.wxml-->
+<view class="container">
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+        <block wx:for="{{movies}}" wx:for-index="index" wx:key="index">  
+          <swiper-item>  
+            <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+          </swiper-item>  
+        </block>  
+  </swiper> 
+
+<view class="c-notice-bar">
+   <van-notice-bar
+  left-icon="volume-o"
+  text="请勿传播淫秽色情及低俗信息、发布虚假信息进行诈骗"
+/>
+</view>
+
+<!-- <view class="c-skeleton">
+   <van-skeleton title avatar row="3" >
+      <view>12313546</view>
+ 
+  </van-skeleton>
+</view> -->
+<view class="c-user-dynamics">
+   <block>
+   <view class="c-top">
+      <view class="c-avatar"><image src="/images/m-img1.jpg" mode="aspectFill"></image></view>
+    <view class="c-info">
+        <view class="c-petName"><text>宠物昵称</text><text class="c-publishTime">发布时间</text></view>
+        <view class="c-masterinfo">
+            <view><image src="/images/m-img2.jpg" mode="aspectFill"></image></view>
+            <text class="c-masterName">主人的昵称</text>
+            <text class="c-masterDec">铲屎官</text>
+        </view>
+    </view>
+   </view>
+    <view class="c-description">
+        <text>#萌宠日常#</text>
+        <text class="c-des-dec">一句简短的话描述~~一句简短的话描述~~一句简短的话描述~~一句简短的话描述~~一句简短的话描述~~一句简短的话描述~~</text>
+        <view class="c-des-img">
+          <image src="/images/m-img2.jpg" mode="aspectFill"></image> 
+          <image src="/images/m-img1.jpg" mode="aspectFill"></image> 
+          <image src="/images/m-img1.jpg" mode="aspectFill"></image>
+        </view>
+    </view>
+     <view class="list-command-btn" wx:if='{{commandTab == index}}' animation="    {{animationData}}">   
+            <!-- 这里的 commandTab == index 控制指定的评论和点赞区的显示  -->
+          <view class="btn-command" bindtap="praiseThumbsClick" >
+            <van-icon name="like-o" />
+            <view class="c-text"><text>1</text></view>
+            <!-- <text hidden="{{item.praiseFlag}}">1</text>
+            <text hidden="{{!item.praiseFlag}}">取消</text> -->
+          </view>
+          <view class="btn-command" bindtap="inputCommandClick">
+            <van-icon name="comment-o" />
+            <view class="c-text"><text>评论</text></view>
+          </view>
+          <view class="btn-command" bindtap="inputCommandClick">
+            <van-icon name="ellipsis" />
+          </view>
+        </view>
+      <view class="c-collapse"></view>
+  </block>
+
+    <block>
+   <view class="c-top">
+      <view class="c-avatar"><image src="/images/m-img1.jpg" mode="aspectFill"></image></view>
+    <view class="c-info">
+        <view class="c-petName"><text>宠物昵称</text><text class="c-publishTime">发布时间</text></view>
+        <view class="c-masterinfo">
+            <view><image src="/images/m-img2.jpg" mode="aspectFill"></image></view>
+            <text class="c-masterName">主人的昵称</text>
+            <text class="c-masterDec">铲屎官</text>
+        </view>
+    </view>
+   </view>
+    <view class="c-description">
+        <text>#萌宠日常#</text>
+        <text class="c-des-dec">一句简短的话描述~~一句简短的话描述~~一句简短的话描述~~一句简短的话描述~~一句简短的话描述~~一句简短的话描述~~</text>
+        <view class="c-des-img">
+          
+          <image src="/images/m-img1.jpg" mode="aspectFill"></image>
+          <image src="/images/m-img2.jpg" mode="aspectFill"></image> 
+        </view>
+    </view>
+     <view class="list-command-btn" wx:if='{{commandTab == index}}' animation="    {{animationData}}">   
+            <!-- 这里的 commandTab == index 控制指定的评论和点赞区的显示  -->
+          <view class="btn-command" bindtap="praiseThumbsClick" >
+            <van-icon name="like-o" />
+            <view class="c-text"><text>1</text></view>
+            <!-- <text hidden="{{item.praiseFlag}}">1</text>
+            <text hidden="{{!item.praiseFlag}}">取消</text> -->
+          </view>
+          <view class="btn-command" bindtap="inputCommandClick">
+            <van-icon name="comment-o" />
+            <view class="c-text"><text>评论</text></view>
+          </view>
+          <view class="btn-command" bindtap="inputCommandClick">
+            <van-icon name="ellipsis" />
+          </view>
+        </view>
+      <view class="c-collapse"></view>
+  </block>
+
+
+</view>
+ 
+</view>

@@ -7,5 +7,9 @@
   bind:cancel="onCancel"
   bind:focus="onFocus"
 />
+<view class="c-search-img">
+    <image  src="/images/disease-search.png"></image>
+    <view class="c-text"> <text>不懂?搜一下鸭~~~</text></view>
+</view>
 
 
